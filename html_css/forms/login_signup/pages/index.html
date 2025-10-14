@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style/style.css">
+    <!-- font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap">
+    <title>فرم ورود</title>
+</head>
+<body>
+    <section class="main">
+    <input type="checkbox" id="check_box" aria-hidden="true">
+        <!-- SignUp -->
+     <div class="signup">
+        <form action="#" method="post">
+            <label for="check_box" aria-hidden="true" class="label_signup">ثبت نام</label>
+            <input type="text" name="username" id="username" placeholder="نام کاربری" required>
+            <input type="email" name="email" id="email" placeholder="ایمیل" required>
+            <input type="password" name="passwd" id="passwd" placeholder="رمز عبور" required>
+            <button type="submit">ثبت نام</button>
+        </form>
+     </div>
+    <!-- Login -->
+     <div class="login">
+        <form action="#" method="post">
+            <label for="check_box" aria-hidden="true" class="label_login">ورود</label>
+            <input type="email" name="mail" id="mail" placeholder="ایمیل" required="">
+            <input type="password" name="pass" id="pass" placeholder="رمز عبور" required="">
+            <button type="submit">ورود</button>
+        </form>
+     </div>
+    </section>
+</body>
+</html>

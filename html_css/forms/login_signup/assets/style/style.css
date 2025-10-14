@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  padding: 97px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Vazirmatn", sans-serif;
+  background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+}
+.main {
+  width: 350px;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 5px 20px 50px #000;
+  background: linear-gradient(to top, #0f0c29, #302b63, #24243e);
+}
+/* SignUp */
+.signup {
+  width: 100%;
+  height: 100%;
+}
+.label_signup {
+  display: flex;
+  margin: 50px;
+  justify-content: center;
+  color: #fff;
+  font-size: 2.3em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  font-family: "Vazirmatn", sans-serif !important;
+}
+/* Login */
+.login {
+  height: 460px;
+  background: #eee;
+  border-radius: 60% / 10%;
+  transform: translateY(-180px);
+  transition: 0.8s ease-in-out;
+}
+.label_login {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+  color: #573b8a;
+  font-size: 2.3em;
+  font-weight: bold;
+  cursor: pointer;
+  transform: scale(0.6);
+  transition: 0.5s ease-in-out;
+  font-family: "Vazirmatn", sans-serif !important;
+}
+input {
+  width: 60%;
+  height: 10px;
+  display: flex;
+  margin: 20px auto;
+  padding: 12px;
+  justify-content: center;
+  background: #e0dede;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  text-align: right;
+  font-family: "Vazirmatn", sans-serif !important;
+}
+button {
+  width: 60%;
+  height: 40px;
+  display: block;
+  color: #fff;
+  margin: 20px auto;
+  justify-content: center;
+  background: #573b8a;
+  font-size: 1em;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  transition: 0.2s ease-in;
+  cursor: pointer;
+  font-family: "Vazirmatn", sans-serif !important;
+}
+button:hover {
+  background: #6d44b8;
+}
+/* Label */
+#check_box {
+  display: none;
+}
+#check_box:checked ~ .login {
+  transform: translateY(-500px);
+}
+#check_box:checked ~ .label_login {
+  transform: scale(1);
+}
+#check_box:checked ~ .label_signup {
+  transform: scale(0.6);
+}
