@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  background: #5f5f84;
+}
+/* Container */
+.container {
+  width: 550px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  cursor: pointer;
+  position: relative;
+}
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: white;
+  z-index: 1000;
+  transition: 1.5s;
+}
+.container:hover::before {
+  top: calc(100% - 4px);
+}
+.container_image {
+  width: 300px;
+  height: 300px;
+}
+/* Character Image */
+.image_box {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.character_image {
+  width: 100%;
+  height: 100%;
+}
+.image_box:nth-child(2) {
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  transition: 1.5s;
+}
+.container:hover .image_box:nth-child(2) {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  transition: 1.5s;
+}
