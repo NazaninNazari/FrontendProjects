@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap");
+.body {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #151f28;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+}
+.square {
+  width: 470px;
+  height: 470px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.square i {
+  position: absolute;
+  inset: 0;
+  border: 2px solid #fff;
+  transition: 0.5s;
+}
+.item_one {
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  animation: animate 6s linear infinite;
+  --clr: #d282e4;
+}
+.item_two {
+  border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+  animation: animate 4s linear infinite;
+  --clr: #ff7293;
+}
+.item_three {
+  border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+  animation: animate2 10s linear infinite;
+  --clr: #80e6f3;
+}
+.square:hover i {
+  border: 6px solid var(--clr);
+  filter: drop-shadow(0 0 20px var(--clr));
+}
+.login {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-family: "Open Sans", sans-serif;
+}
+.label_login {
+  font-size: 2em;
+  color: #fff;
+}
+.inputBx {
+  width: 100%;
+  padding: 12px 20px;
+  position: relative;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 40px;
+  font-size: 1.2em;
+  color: #fff;
+  box-shadow: none;
+  outline: none;
+}
+.submit_button {
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(45deg, #d282e4, #ff72f3);
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+.links {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.link {
+  color: #fff;
+  text-decoration: none;
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate2 {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
