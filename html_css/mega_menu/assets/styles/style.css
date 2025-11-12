@@ -1,0 +1,70 @@
+#body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.header {
+  width: 100%;
+  padding: 6px;
+  position: fixed;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+}
+.list_items {
+  list-style: none;
+  display: inline-block;
+  padding: 0 30px;
+  border-left: 2px solid #a53ce7;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+.link_items {
+  color: black;
+  text-decoration: none;
+}
+.link_items:hover {
+  color: #a53ce7;
+  transition: all 0.3s ease;
+}
+.menu_items {
+  transition: all 0.5s ease;
+  clear: both;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+  border-style: none;
+}
+.mega_menu:hover {
+  padding-left: 10px;
+  border-left: 2px solid #a53ce7;
+  transition: all 0.3s ease;
+}
+.dropdown {
+  visibility: hidden;
+  position: absolute;
+  padding-left: 0;
+  left: 0;
+  display: none;
+  background: white;
+  border: 2px solid #a53ce7;
+  border-radius: 5px;
+}
+.list_items:hover > .dropdown,
+.dropdown:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  min-width: 250px;
+  text-align: left;
+  padding-top: 20px;
+  box-shadow: 0px 3px 5px -1px #ccc;
+}
