@@ -5,6 +5,7 @@ body {
   justify-content: center;
   align-items: center;
   background: white;
+  box-sizing: border-box;
 }
 .container {
   width: 100%;
