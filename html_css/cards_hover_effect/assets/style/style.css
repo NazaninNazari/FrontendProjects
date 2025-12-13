@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin-top: 230px;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 200px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 50px;
+  padding: 0 40px;
+  perspective: 2500px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* Cover Cards */
+.cover_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+/* Wrapper */
+.wrapper {
+  width: 100%;
+  transition: all 0.5s;
+  position: absolute;
+  z-index: -1;
+}
+.card:hover .wrapper {
+  transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+  box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+}
+.wrapper::before,
+.wrapper::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  position: absolute;
+  left: 0;
+  border-radius: 5px;
+}
+.wrapper::before {
+  background-image: linear-gradient(
+    to top,
+    transparent 46%,
+    rgba(12, 13, 19, 0.5) 68%,
+    rgba(12, 13, 19) 97%
+  );
+}
+.wrapper::after {
+  background-image: linear-gradient(
+    to bottom,
+    transparent 46%,
+    rgba(12, 13, 19, 0.5) 68%,
+    rgba(12, 13, 19) 97%
+  );
+}
+.card:hover .wrapper::before,
+.wrapper::after {
+  opacity: 1;
+}
+/* Title */
+.title {
+  width: 100%;
+  transition: transform 0.5s;
+}
+.card:hover .title {
+  transform: translate3d(0%, -50px, 100px);
+}
+/* Character */
+.character {
+  width: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  position: absolute;
+  z-index: -1;
+}
+.card:hover .character {
+  opacity: 1;
+  transform: translate3d(0%, -30%, 100px);
+}
