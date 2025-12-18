@@ -1,0 +1,54 @@
+.body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  touch-action: none;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.dragon {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #c9c9c9;
+  cursor: pointer;
+  filter: sepia(20%);
+}
+.one_path_tag {
+  fill: #ffffff;
+  fill-opacity: 1;
+}
+.two_path_tag {
+  fill: #403d3e;
+  fill-opacity: 1;
+}
+.three_path_tag {
+  fill: url(#LinearGradID_1);
+}
+.four_path_tag {
+  fill: url(#LinearGradID_2);
+}
+.five_path_tag {
+  fill: url(#LinearGradID_3);
+}
+.one_stop_tag {
+  stop-color: #cccccc;
+  stop-opacity: 1;
+}
+.two_stop_tag {
+  stop-color: #598e99;
+  stop-opacity: 1;
+}
+.three_stop_tag {
+  stop-color: #434f4e;
+  stop-opacity: 1;
+}
