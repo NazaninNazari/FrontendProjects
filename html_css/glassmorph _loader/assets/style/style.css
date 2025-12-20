@@ -1,0 +1,80 @@
+.body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #867191, #639183, #432c52);
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin-top: 200px;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader::before {
+  content: "";
+  width: 140px;
+  height: 55px;
+  position: absolute;
+  z-index: 20;
+  border-radius: 0 0 10px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.274);
+  border-top: none;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.082);
+  animation: anim2 2s infinite;
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(8px);
+}
+.item {
+  width: 25px;
+  height: 25px;
+  margin: 0.2em;
+  z-index: -1;
+  border-radius: 50%;
+  background: rgb(228, 228, 228);
+  animation: anim 2s infinite linear;
+  animation-delay: calc(-0.3s * var(--i));
+  transform: translateY(5px);
+}
+.item_one {
+  --i: 1;
+}
+.item_two {
+  --i: 2;
+}
+.item_three {
+  --i: 3;
+}
+.item_four {
+  --i: 4;
+}
+@keyframes anim {
+  0%,
+  100% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(-65px);
+  }
+}
+
+@keyframes anim2 {
+  0%,
+  100% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+}
