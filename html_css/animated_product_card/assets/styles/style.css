@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wgth@300;400;500;600;700;800,900&display=swap");
+.body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(49, 46, 46);
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+.card_box {
+  width: 350px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.card_box:hover {
+  width: 600px;
+  transition-delay: 0.5s;
+}
+.circle_box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  position: absolute;
+}
+.circle_box::before {
+  content: "";
+  width: 350px;
+  height: 350px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 8px solid #b2aaaa;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #191919;
+  transition: 0.5s, background 0.5s;
+  transition-delay: 0.75s, 1s;
+  filter: drop-shadow(0 0 10px #d50909) drop-shadow(0 0 40px #d50909);
+
+}
+.card_box:hover .circle_box::before {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-radius: 20px;
+  transition-delay: 0.5s;
+  background: #ce2f1a;
+}
+.logo_cocacola {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+.card_box:hover .logo_cocacola {
+  transform: scale(0);
+  transition-delay: 0s;
+}
+.image_cocacola {
+  width: 250px;
+  height: 250px;
+  margin-top: 500px;
+  margin-right: -120px;
+  transform: translate(-50%, -50%) scale(0) rotate(315deg);
+  transition: 0.5s ease-in-out;
+}
+.card_box:hover .image_cocacola {
+  width: 250px;
+  height: 500px;
+  transition-delay: 0.75s;
+  transform: translate(-50%, -50%) scale(1) rotate(15deg);
+}
+.content_box {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  opacity: 0;
+  padding: 25px;
+  z-index: 1000;
+  transition: 0.5s;
+  visibility: hidden;
+  color: #fff;
+}
+.card_box:hover .content_box {
+  transition-delay: 0.75s;
+  opacity: 1;
+  visibility: visible;
+}
+.heading {
+  text-transform: uppercase;
+  font-size: 2.4em;
+  line-height: 1em;
+}
+.paraghraph {
+  width: 350px;
+}
+.order {
+  color: #111;
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+}
