@@ -1,0 +1,60 @@
+.body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(137, 216, 223);
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin: 250px;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  -webkit-perspective: 700px;
+  perspective: 700px;
+}
+.text {
+  font-size: 130px;
+  font-family: "franklin gothic medium", sans-serif;
+  display: inline-block;
+  animation: flip 2.6s infinite linear;
+  transform-origin: 0 70%;
+  transform-style: preserve-3d;
+  color: rgb(213, 54, 200);
+}
+.text:nth-child(even) {
+  color: rgb(94, 54, 213);
+}
+.text:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.text:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.text:nth-child(4) {
+  animation-delay: 0.9s;
+}
+.text:nth-child(5) {
+  animation-delay: 1.2s;
+}
+.text:nth-child(6) {
+  animation-delay: 1.5s;
+}
+.text:nth-child(7) {
+  animation-delay: 1.8s;
+}
+@keyframes flip {
+  35% {
+    transform: rotateX(360deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
