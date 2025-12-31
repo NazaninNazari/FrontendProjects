@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="../assets/styles/style.css" />
+    <title>LoginForm</title>
+  </head>
+  <body class="body">
+    <form action="#" method="post" id="form_login" class="wrapper">
+      <div class="input_box">
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="username"
+          class="input_form"
+        />
+        <i class="bx bxs-user icon"></i>
+      </div>
+      <div class="input_box">
+        <input
+          type="password"
+          name="passwd"
+          id="passwd"
+          placeholder="password"
+          class="input_form"
+        />
+        <i class="bx bxs-lock-alt icon"></i>
+      </div>
+      <div class="remember_forget">
+        <div class="box_remember">
+          <input
+            type="checkbox"
+            name="check_button"
+            id="check_button"
+            class="check_button"
+          />
+          <label for="check_button">Remember me</label>
+        </div>
+        <a href="#" target="_self" class="forget_password">Forget Password</a>
+      </div>
+      <button type="submit" class="button_login">Login</button>
+      <div class="register_link">
+        <span>Don't have account?</span>
+        <a href="#" target="_self" class="register">Register</a>
+      </div>
+    </form>
+  </body>
+</html>

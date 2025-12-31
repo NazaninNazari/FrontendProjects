@@ -1,0 +1,113 @@
+.body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+  background: url(../images/lake-forest-mountains-illustration-4k-fv.jpg)
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.wrapper {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px 40px 30px 20px;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border-radius: 10px;
+}
+.input_box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.input_form {
+  width: 350px;
+  padding: 20px;
+  border: none;
+  outline: none;
+  color: #eee8e8;
+  font-size: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  background: transparent;
+}
+.input_form::placeholder {
+  color: #eee8e8;
+}
+.icon {
+  font-size: 20px;
+  color: #0d0d0d;
+  position: relative;
+  margin-left: -40px;
+}
+.remember_forget {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+  font-size: 14.5px;
+}
+.forget_password {
+  color: #fff;
+  text-decoration: none;
+}
+.forget_password:hover {
+  text-decoration: underline;
+}
+.box_remember {
+  width: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button_login {
+  width: 100%;
+  padding: 20px;
+  border: none;
+  outline: none;
+  color: #333;
+  background: #fff;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+}
+.button_login:hover {
+  background: rgba(255, 255, 255, 0.5);
+  color: #fff;
+  border-color: #fff;
+}
+.register_link {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  font-size: 14.5px;
+  justify-content: center;
+  text-align: center;
+}
+.register {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.register:hover {
+  text-decoration: underline;
+}

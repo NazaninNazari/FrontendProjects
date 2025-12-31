@@ -1,0 +1,108 @@
+.body {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background-color: antiquewhite;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 0;
+  padding-top: 80px;
+  justify-content: center;
+  align-items: center;
+  perspective: 3000px;
+}
+.card {
+  width: 360px;
+  height: 530px;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease-in-out;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2),
+    -5px -5px 10px rgba(0, 0, 0, 0.05);
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+.front_page,
+.back_page {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 15px;
+  backface-visibility: hidden;
+}
+.image_drink_one {
+  background-image: url(../images/pepsii.jpeg);
+  background-size: cover;
+}
+.image_drink_two {
+  background-image: url(../images/juicy_showdown.jpeg);
+  background-size: cover;
+}
+.card_info {
+  justify-content: center;
+  text-align: center;
+  margin-top: 440px;
+  color: #fff;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.card_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+.card_subtitle {
+  font-size: 1.2rem;
+  color: #ca82d7;
+}
+.back_page {
+  display: flex;
+  color: #fff;
+  background-color: #1e272e;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(180deg);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+.card_content {
+  max-width: 300px;
+  padding: 20px;
+  text-align: center;
+}
+.card_description {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+.card_button {
+  background-color: #f173ef;
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.card_button:hover {
+  color: #f085dc;
+  border: 1px solid #eb8bd6;
+  background-color: transparent;
+}
