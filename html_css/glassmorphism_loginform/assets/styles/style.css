@@ -1,0 +1,125 @@
+.body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 122px;
+  justify-content: center;
+  align-items: center;
+  background: url("../images/background.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+}
+.form_login {
+  width: 340px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  color: #fff;
+}
+.label_form {
+  font-size: 2.2em;
+  text-align: center;
+}
+.input_box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 10px;
+  border-bottom: 2px solid #fff;
+}
+.inputs_box {
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color: #fff;
+}
+.label_inputs {
+  text-align: left;
+  color: #164275;
+  font-size: 1em;
+  pointer-events: none;
+  transition: 0.5s;
+}
+.forgot_password {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9em;
+}
+.forgot_box {
+  width: 120px;
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  justify-content: center;
+  align-items: center;
+}
+.link_forgot {
+  color: #fff;
+  text-decoration: none;
+  transition: all 1s;
+}
+.link_forgot:hover {
+  text-decoration: underline;
+  color: rgb(99, 99, 249);
+}
+.button_login {
+  width: 100%;
+  padding: 14px;
+  border-radius: 16px;
+  background: #fff;
+  color: #164275;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+  transition: all 1s;
+}
+.button_login:hover {
+  color: #fff;
+  background-color: rgb(108, 135, 234);
+}
+.register {
+  width: 100%;
+  display: flex;
+  font-size: 0.9em;
+  justify-content: center;
+  align-items: center;
+}
+.link_register {
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 1s;
+  color: #fff;
+}
+.link_register:hover {
+  text-decoration: underline;
+  color: rgb(99, 99, 249);
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>DataTable</title>
+  </head>
+  <body class="body">
+    <section class="container">
+      <header class="header">
+        <span class="header_table">جدول داده‌ها</span>
+      </header>
+      <section class="controls">
+        <div class="control_group">
+          <label for="searchInput" class="labels">جستجو</label>
+          <input
+            id="searchInput"
+            type="search"
+            placeholder="جستجو در نام، ایمیل، نقش و وضعیت..."
+            class="input_search"
+          />
+        </div>
+        <div class="control_group">
+          <label for="statusFilter" class="labels">وضعیت</label>
+          <select id="statusFilter" class="select_options">
+            <option value="">همه</option>
+            <option value="فعال">فعال</option>
+            <option value="غیرفعال">غیرفعال</option>
+            <option value="در انتظار">در انتظار</option>
+          </select>
+        </div>
+        <div class="control_group">
+          <label for="pageSize" class="labels">تعداد در صفحه</label>
+          <select id="pageSize">
+            <option value="5">5</option>
+            <option value="10" selected>10</option>
+            <option value="25">25</option>
+            <option value="50">50</option>
+          </select>
+        </div>
+        <div class="control_group">
+          <button id="resetFilters" class="btn_secondary">
+            پاکسازی فیلترها
+          </button>
+        </div>
+      </section>
+      <section class="table_card">
+        <div class="table_wrapper">
+          <table id="dataTable" class="table_users">
+            <thead>
+              <tr>
+                <th data-key="id" class="sortable">شناسه</th>
+                <th data-key="name" class="sortable">نام</th>
+                <th data-key="email" class="sortable">ایمیل</th>
+                <th data-key="role" class="sortable">نقش</th>
+                <th data-key="status" class="sortable">وضعیت</th>
+                <th data-key="createdAt" class="sortable">تاریخ ثبت‌نام</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+          </table>
+        </div>
+        <div id="emptyState" class="empty_state" hidden>موردی یافت نشد</div>
+        <footer class="table_footer">
+          <div id="rangeInfo" class="range_info"></div>
+          <nav id="pagination" class="pagination"></nav>
+        </footer>
+      </section>
+    </section>
+    <script src="../assets/javascript/script.js"></script>
+  </body>
+</html>

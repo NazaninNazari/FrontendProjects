@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/styles/style.css" />
+    <title>FormLogin</title>
+  </head>
+  <body class="body">
+    <section class="container">
+      <form action="#" method="post" id="login_form" class="form_login">
+        <label for="login_form" class="label_form">Login</label>
+        <div class="input_box">
+          <label for="mail" class="label_inputs">Email</label>
+          <input
+            type="email"
+            name="mail"
+            id="mail"
+            class="inputs_box"
+            required
+          />
+        </div>
+        <div class="input_box">
+          <label for="passwd" class="label_inputs">Password</label>
+          <input
+            type="password"
+            name="passwd"
+            id="passwd"
+            class="inputs_box"
+            required
+          />
+        </div>
+        <div class="forgot_password">
+          <div class="forgot_box">
+            <input type="checkbox" name="label_forgot" id="label_forgot" />
+            <label for="label_forgot">Remember me</label>
+          </div>
+          <a href="#" target="_self" class="link_forgot">Forgot password?</a>
+        </div>
+        <button type="submit" class="button_login">Log in</button>
+        <div class="register">
+          <p>
+            Don't have a account ?
+            <a href="#" target="_self" class="link_register">Register</a>
+          </p>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>

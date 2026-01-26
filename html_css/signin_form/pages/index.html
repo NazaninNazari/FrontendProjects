@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/styles/style.css" />
+    <title>SigninFormAnimation</title>
+  </head>
+  <body class="body">
+    <section class="container">
+      <form action="#" method="post" id="form_login" class="login_form">
+        <div class="title_box">
+          <label for="form_login" class="label_form">Sign In</label>
+          <p class="paragraph">*Click on the input boxes</p>
+        </div>
+        <div class="input_box">
+          <input
+            type="text"
+            name="Username"
+            id="username"
+            placeholder="Username"
+            onfocus="handle2()"
+            class="inputs"
+          />
+          <input
+            type="password"
+            name="Password"
+            id="password"
+            placeholder="Password"
+            onfocus="handle1()"
+            class="inputs"
+          />
+        </div>
+        <button type="submit" class="button_signin">Sign In</button>
+      </form>
+    </section>
+  </body>
+</html>

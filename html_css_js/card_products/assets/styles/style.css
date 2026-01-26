@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap");
+.body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #2c2c2c;
+  color: #f0f0f0;
+  line-height: 1.6;
+  direction: rtl;
+}
+.container {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Vazirmatn", sans-serif;
+}
+.text_heading {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #35ffbc;
+}
+.products_box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.product_card {
+  width: 350px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  background: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid #3a3a3a;
+  backdrop-filter: blur(10px);
+}
+.product_card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  background: #2a2a2a;
+  border-color: var(#35ffbc);
+}
+.product_image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #3a3a3a;
+  transition: transform 0.5s ease;
+}
+.product_card:hover .product_image {
+  transform: scale(1.05);
+}
+.product_details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.product_title {
+  font-size: 1.2rem;
+}
+.product-description {
+  width: 100%;
+  display: flex;
+  color: #cccccc;
+  font-size: 0.9rem;
+}
+.product-price {
+  width: 100%;
+  padding: 12px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #eee;
+}
+.price {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.add-to-cart {
+  background: linear-gradient(135deg, #23d096, #04e0ca);
+  color: black;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 20px rgba(53, 225, 255, 0.3);
+}
+.add-to-cart:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(108, 99, 255, 0.4);
+}
+.add-to-cart:active {
+  transform: translateY(0);
+}
+.sale-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: linear-gradient(135deg, #2fdded, #00f79c);
+  color: black;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(71, 175, 255, 0.3);
+  animation: pulse 2s infinite;
+}
+.rating {
+  display: flex;
+  margin: 10px 0;
+  color: #fac219;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

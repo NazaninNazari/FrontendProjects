@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>LoginForm</title>
+  </head>
+  <body class="body">
+    <section class="container">
+      <div class="background_circles">
+        <div class="background_circle circle_one"></div>
+        <div class="background_circle circle_two"></div>
+      </div>
+      <form action="#" method="post" id="form_login" class="login_form">
+        <label for="form_login" class="label_title">ورود به سیستم</label>
+        <div class="input_box">
+          <label for="username" class="label_inputs">نام کاربری</label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            class="inputs"
+            placeholder="ایمیل یا شماره تلفن"
+            required
+          />
+        </div>
+        <div class="input_box">
+          <label for="passwd" class="label_inputs">رمز عبور</label>
+          <input
+            type="password"
+            name="passwd"
+            id="passwd"
+            class="inputs"
+            placeholder="رمز عبور"
+            required
+          />
+        </div>
+        <button type="submit" class="button_login">ورود</button>
+        <div class="box_social_media">
+          <button type="button" class="button_social_media">
+            <span class="social_icon">G</span>
+            گوگل
+          </button>
+          <button type="button" class="button_social_media">
+            <span class="social_icon">f</span>
+            فیسبوک
+          </button>
+        </div>
+      </form>
+    </section>
+    <script src="../assets/javascript/script.js"></script>
+  </body>
+</html>

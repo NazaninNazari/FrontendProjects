@@ -1,0 +1,133 @@
+.body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin: 0;
+  padding-top: 48px;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background: #000;
+  direction: rtl;
+  font-family: "Vazirmatn", sans-serif;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.background_form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: absolute;
+  padding: 218px 0 0 0;
+}
+.background_form::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(#000, #4abee2, #000);
+  animation: animate 5s linear infinite;
+}
+.background_span {
+  width: calc(6.25vw - 2px);
+  height: calc(6.25vw - 2px);
+  display: block;
+  z-index: 2;
+  background: #181818;
+  transition: 1.5s;
+}
+.background_span:hover {
+  background: #4ad0e2;
+  transition: 0s;
+}
+.form_signin {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 40px;
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  background: #222;
+  border-radius: 4px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.9);
+  position: relative;
+  top: 100px;
+}
+.label_form {
+  font-size: 2em;
+  color: #4ae2d5;
+  text-transform: uppercase;
+}
+.input_user_pass {
+  width: 100%;
+  display: flex;
+  background: #333;
+  border: none;
+  outline: none;
+  padding: 17px;
+  border-radius: 4px;
+  color: #8a8989;
+  transition: 0.5s;
+}
+.input_user_pass:focus,
+.input_user_pass:valid {
+  transform: translateY(-7.5px);
+  font-size: 0.8em;
+  color: #fff;
+}
+.links {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.link {
+  color: #fff;
+  text-decoration: none;
+}
+.link:hover {
+  color: #4ebecc;
+}
+.signup {
+  color: #4a90e2;
+  font-weight: 600;
+}
+.button_signin {
+  width: 100%;
+  padding: 10px;
+  background: #4a90e2;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.35em;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  transition: all 1s;
+}
+.button_signin:hover {
+  background-color: #41c9be;
+}
+.button_signin:active {
+  opacity: 0.6;
+}
+@keyframes animate {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
