@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/styles/style.css" />
+    <title>PasswordLight</title>
+  </head>
+  <body class="body">
+    <section class="container">
+      <form
+        action="#"
+        method="post"
+        id="form_signin"
+        class="form"
+        onsubmit="return false"
+      >
+        <div class="input_box">
+          <label for="username" class="label_input">Username</label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            class="input"
+            spellcheck="false"
+            data-lpignore="true"
+          />
+        </div>
+        <div class="input_box">
+          <label for="password" class="label_input">Password</label>
+          <div class="input_wrapper">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="input input_password"
+              spellcheck="false"
+              data-lpignore="true"
+            />
+            <button type="button" id="eyeball" class="button_eyeball">
+              <div class="eye"></div>
+            </button>
+            <div id="beam" class="beam"></div>
+          </div>
+        </div>
+        <button type="submit" id="submit" class="button_signin">Sign in</button>
+      </form>
+    </section>
+    <script src="../assets/javascript/script.js"></script>
+  </body>
+</html>
