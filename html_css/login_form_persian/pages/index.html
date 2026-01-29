@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/styles/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>FormLogin</title>
+  </head>
+  <body class="body">
+    <section class="container">
+      <form action="#" method="post" id="form_login" class="login_form">
+        <label for="form_login" class="label_form">ورود</label>
+        <div class="boxs">
+          <div class="input_box">
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="نام کاربری"
+              class="inputs"
+              required
+            />
+            <i class="bx bxs-user icons"></i>
+          </div>
+          <div class="input_box">
+            <input
+              type="password"
+              name="passwd"
+              id="passwd"
+              placeholder="رمز عبور"
+              class="inputs"
+              required
+            />
+            <i class="bx bxs-lock-alt icons"></i>
+          </div>
+        </div>
+        <div class="remember_forgot">
+          <div class="checkbox_box">
+            <input
+              type="checkbox"
+              name="input_checkbox"
+              id="input_checkbox"
+              class="checkbox_input"
+            />
+            <label for="input_checkbox" class="label_checkbox"
+              >مرا به خاطر بسپار</label
+            >
+          </div>
+          <a href="#" target="_self" class="link">رمز عبور را فراموش کردید؟</a>
+        </div>
+        <button type="submit" class="button_login">ورود</button>
+        <div class="register_link">
+          <p class="paragraph">
+            حساب کاربری ندارید؟
+            <a href="#" target="_self" class="link_register">ثبت نام</a>
+          </p>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
