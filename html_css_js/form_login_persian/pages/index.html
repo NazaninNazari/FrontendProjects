@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>ورود به حساب کاربری</title>
+  </head>
+  <body class="body">
+    <section class="container">
+      <form action="#" method="post" id="form_login" class="form">
+        <div class="header_login">
+          <label for="form_login" class="label_login">خوش آمدید</label>
+          <p class="subtitle_login">برای ادامه وارد حساب کاربری خود شوید</p>
+        </div>
+        <div class="input_box">
+          <label for="mail" class="label_input"
+            ><i class="fas fa-user icon_input"></i>نام کاربری</label
+          >
+          <input
+            type="email"
+            name="mail"
+            id="mail"
+            class="inputs"
+            placeholder="ایمیل خود را وارد کنید"
+            required
+          />
+        </div>
+        <div class="input_box">
+          <label for="password" class="label_input"
+            ><i class="fas fa-lock icon_input"></i>رمز عبور</label
+          >
+          <input
+            type="password"
+            name="passwd"
+            id="password"
+            class="inputs"
+            placeholder="رمز عبور خود را وارد کنید"
+            required
+          />
+        </div>
+        <div class="remember_forgot">
+          <div class="check_box">
+            <input
+              type="checkbox"
+              name="check"
+              id="check"
+              class="input_checkbox"
+            />
+            <label for="check" class="label_remember">مرا به خاطر بسپار</label>
+          </div>
+          <a href="#" target="_self" class="link_forgot"
+            >رمز عبور را فراموش کرده‌اید؟</a
+          >
+        </div>
+        <button type="submit" class="button_login">
+          <i class="fas fa-sign-in-alt"></i>ورود به حساب
+        </button>
+        <div class="divider">
+          <span class="line_divider"></span><span class="text_divider">یا</span
+          ><span class="line_divider"></span>
+        </div>
+        <div class="socila_box">
+          <a href="#" target="_self" class="button_social">
+            <i class="fab fa-google"></i>
+            <span>ورود با گوگل</span>
+          </a>
+          <a href="#" target="_self" class="button_social">
+            <i class="fab fa-telegram"></i>
+            <span>ورود با تلگرام</span>
+          </a>
+        </div>
+        <span class="link_box mt-2"
+          >حساب کاربری ندارید؟<a href="#" target="_self" class="link_forgot"
+            >ثبت نام کنید</a
+          >
+        </span>
+      </form>
+    </section>
+    <script src="../assets/javacsipt/script.js"></script>
+  </body>
+</html>
