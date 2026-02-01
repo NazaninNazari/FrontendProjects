@@ -1,0 +1,216 @@
+.body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  direction: rtl;
+  font-family: "Vazirmatn", sans-serif;
+  background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin-top: 100px;
+  padding: 0 60px;
+  justify-content: center;
+  align-items: center;
+}
+.products_container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.popup_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.popup_overlay.show {
+  display: flex;
+  opacity: 1;
+}
+.popup_content {
+  width: 900px;
+  display: flex;
+  padding: 30px;
+  gap: 30px;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-radius: 25px;
+  background: #1f2937;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+  transform: scale(0.5);
+  opacity: 0;
+  transition:
+    transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55),
+    opacity 0.5s ease;
+}
+.popup_content.show {
+  transform: scale(1);
+  opacity: 1;
+}
+.button_close {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: #ef4444;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+.button_close:hover {
+  background: #dc2626;
+  transform: rotate(90deg);
+}
+.popup_box {
+  width: 600px;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.popup_details {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: bold;
+  color: #facc15;
+}
+.popup_title {
+  font-size: 20px;
+}
+.popup_subtitle {
+  color: #9ca3af;
+  line-height: 1.6;
+  font-weight: normal;
+}
+.popup_price {
+  font-size: 18px;
+}
+.popup_stock {
+  font-size: 1.1rem;
+}
+.stock.available {
+  color: #34d399;
+}
+.stock.unavailable {
+  color: #ef4444;
+}
+.button_cart {
+  width: 250px;
+  padding: 14px;
+  color: #1f2937;
+  border-radius: 50px;
+  background: #facc15;
+  font-size: 1rem;
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+.button_cart:hover {
+  background: #eab308;
+  transform: scale(1.05);
+}
+.product_card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  color: #facc15;
+  font-weight: bold;
+}
+.product_card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.5);
+}
+.product_card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: 0.5s;
+}
+.product_card:hover::before {
+  left: 100%;
+}
+.product_image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+.product_card:hover .product_image {
+  transform: scale(1.05);
+}
+.product_title {
+  font-size: 20px;
+  color: #e5e7eb;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.product_card .price {
+  font-size: 18px;
+}
+.button_view {
+  width: 100%;
+  padding: 12px;
+  background: #facc15;
+  color: #1f2937;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+.button_view:hover {
+  background: #eab308;
+  transform: scale(1.05);
+}

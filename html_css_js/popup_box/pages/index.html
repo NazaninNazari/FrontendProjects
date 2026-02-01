@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/styles/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/vazirmatn@33.0.3/Vazirmatn-font-face.css"
+      rel="stylesheet"
+    />
+    <title>PopupBox</title>
+  </head>
+  <body class="body">
+    <section class="container">
+      <div class="products_container" id="productsContainer"></div>
+      <div class="popup_overlay" id="popupOverlay">
+        <div class="popup_content" id="popupContent">
+          <div class="popup_box">
+            <img
+              alt="product"
+              src=""
+              id="popupImage"
+              class="image"
+              width="200"
+              height="200"
+              loading="lazy"
+            />
+            <div class="popup_details">
+              <span class="popup_title" id="popupTitle"></span>
+              <p class="popup_subtitle" id="popupDescription"></p>
+              <div class="popup_price" id="popupPrice"></div>
+              <div class="popup_stock" id="popupStock"></div>
+              <button class="button_cart">افزودن به سبد خرید</button>
+            </div>
+          </div>
+          <span class="button_close" id="closePopup">×</span>
+        </div>
+      </div>
+    </section>
+    <script src="../assets/javascript/script.js"></script>
+  </body>
+</html>
