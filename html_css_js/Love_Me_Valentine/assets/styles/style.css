@@ -1,0 +1,169 @@
+.body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  font-family: "Quicksand", sans-serif;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+}
+.containers {
+  width: 100%;
+  flex-direction: column;
+  gap: 28px;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+}
+.container_question {
+  display: flex;
+}
+.gif_results {
+  width: 300px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+.question {
+  font-size: 60px;
+  font-weight: bold;
+}
+.container_buttons {
+  width: 400px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.buttons {
+  width: 80px;
+  padding: 16px;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #ff54a4;
+  transform: scale(1.05);
+  box-shadow: 0px 4px 15px rgba(255, 107, 129, 0.5);
+  font-family: "Poppins", sans-serif;
+}
+.buttons:hover {
+  background-color: #ffa4b1;
+  transform: scale(1.1);
+  box-shadow: 0px 6px 20px rgba(255, 107, 129, 0.7);
+  text-shadow: 1px 1px 5px rgba(255, 182, 193, 0.8);
+}
+.container_result {
+  display: none;
+  margin-top: 80px;
+}
+.cssload_main {
+  content: "";
+  width: 200px;
+  display: none;
+  margin-top: 140px;
+  padding: 60px;
+  justify-content: center;
+  align-items: center;
+  font-size: 62px;
+}
+.cssload_heart {
+  content: "";
+  animation: cssload-heart 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+}
+.cssload_heartL {
+  content: "";
+  width: 1em;
+  height: 1em;
+  display: block;
+  border: 1px solid #ff0000;
+  background-color: #ff0000;
+  position: absolute;
+  border-radius: 100%;
+  transform: translate(-28px, -27px);
+  animation: cssload-heartL 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+}
+.cssload_heartR {
+  content: "";
+  width: 1em;
+  height: 1em;
+  display: block;
+  border: 1px solid #ff0000;
+  background-color: #ff0000;
+  position: absolute;
+  border-radius: 100%;
+  transform: translate(28px, -27px);
+  animation: cssload-heartR 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+}
+.cssload_square {
+  content: "";
+  width: 1em;
+  height: 1em;
+  display: block;
+  border: 1px solid #ff0000;
+  background-color: #ff0000;
+  transform: scale(1) rotate(-45deg);
+  animation: cssload-square 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+}
+.cssload_shadow {
+  content: "";
+  width: 1em;
+  height: 0.24em;
+  display: block;
+  margin-top: 140px;
+  margin-left: -60px;
+  background-color: rgb(215, 215, 215);
+  border: 1px solid rgb(215, 215, 215);
+  border-radius: 50%;
+  animation: cssload-shadow 2.88s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+}
+@keyframes cssload-square {
+  50% {
+    border-radius: 100%;
+    transform: scale(0.5) rotate(-45deg);
+  }
+  100% {
+    transform: scale(1) rotate(-45deg);
+  }
+}
+@keyframes cssload-heart {
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
+@keyframes cssload-heartL {
+  60% {
+    transform: scale(0.4);
+  }
+}
+@keyframes cssload-heartR {
+  40% {
+    transform: scale(0.4);
+  }
+}
+
+@keyframes cssload-shadow {
+  50% {
+    transform: scale(0.5);
+    border-color: rgb(228, 228, 228);
+  }
+}
