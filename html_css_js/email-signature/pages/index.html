@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/styles/style.css" />
+    <title>EmailSignature</title>
+  </head>
+  <body class="body">
+    <section class="container">
+      <form
+        action="#"
+        method="post"
+        id="signatureForm"
+        enctype="multipart/form-data"
+        class="form_container"
+      >
+        <label class="label_form" for="signatureForm"
+          >Professional email signature maker</label
+        >
+        <div class="input_container">
+          <div class="form_group">
+            <label for="name" class="label_input">Name and surname:</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="For example, Jeyhan Albora"
+              class="form_input"
+              required
+            />
+          </div>
+          <div class="form_group">
+            <label for="job" class="label_input">Position or job title:</label>
+            <input
+              type="text"
+              name="job"
+              id="job"
+              placeholder="For example, web developer"
+              class="form_input"
+              required
+            />
+          </div>
+        </div>
+        <div class="input_container">
+          <div class="form_group">
+            <label for="email" class="label_input">E-Mail:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="For example, Jeyhan@gmail.com"
+              class="form_input"
+              required
+            />
+          </div>
+          <div class="form_group">
+            <label for="tel" class="label_input">Phone (optional):</label>
+            <input
+              type="phone"
+              name="tel"
+              id="tel"
+              placeholder="For example, 09190000000"
+              class="form_input"
+            />
+          </div>
+        </div>
+        <div class="input_container">
+          <div class="form_group">
+            <label for="website" class="label_input">Website (optional):</label>
+            <input
+              type="url"
+              name="website"
+              id="website"
+              placeholder="For example, https://example.com"
+              class="form_input"
+            />
+          </div>
+          <div class="form_group">
+            <label for="instagram" class="label_input"
+              >Instagram link (optional):</label
+            >
+            <input
+              type="url"
+              name="instagram"
+              id="instagram"
+              placeholder="For example, https://instagram.com/username"
+              class="form_input"
+            />
+          </div>
+        </div>
+        <div class="input_container">
+          <div class="form_group">
+            <label for="linkedin" class="label_input"
+              >LinkedIn link (optional):</label
+            >
+            <input
+              type="url"
+              name="linkedin"
+              id="linkedin"
+              placeholder="For example, https://linkedin.com/in/username"
+              class="form_input"
+            />
+          </div>
+          <div class="form_group">
+            <label for="telegram" class="label_input"
+              >Telegram link (optional):</label
+            >
+            <input
+              type="url"
+              name="telegram"
+              id="telegram"
+              placeholder="For example, https://t.me/username"
+              class="form_input"
+            />
+          </div>
+        </div>
+        <div class="form_group select_input">
+          <label for="themeColor" class="label_input">Main theme color:</label>
+          <select id="themeColor" class="form_input">
+            <option value="pink" selected>Pink</option>
+            <option value="gray">Gray</option>
+            <option value="purple">Purple</option>
+            <option value="orange">Orange</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+          </select>
+        </div>
+        <div class="form_group full_width">
+          <label for="logo" class="label_input">Logo (optional):</label>
+          <input
+            type="file"
+            id="logo"
+            accept="image/*"
+            class="form_input file_input"
+          />
+        </div>
+        <div class="button_group input_container form-group full-width">
+          <div class="button_group">
+            <button type="submit" class="buttons button_primary">
+              Make a signature
+            </button>
+            <button
+              type="button"
+              class="buttons button_secondary"
+              id="clearBtn"
+            >
+              Clear form
+            </button>
+          </div>
+        </div>
+        <div class="previews">
+          <span class="subtitle">Signature preview:</span>
+          <div id="preview" class="preview_container"></div>
+          <div class="copy-button-container">
+            <button id="copyBtn" class="buttons button_success" disabled>
+              Copy the signature HTML code
+            </button>
+          </div>
+        </div>
+      </form>
+    </section>
+    <script src="../assets/javascript/script.js"></script>
+  </body>
+</html>
